@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Doom Trooper: Browser</title>
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+    <link rel="stylesheet" href="gatherer.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css" />
+    <script type="text/javascript" src="externjs/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="externjs/jquery/jquery-ui-1.10.4.custom.min.js"></script>
+    <script>
+        var static_image = {
+            'affiliation' : {
+                'Bauhaus' : 'img/Bauhaus.png',
+                'Bractwo' : 'img/Bractwo.png',
+                'Capitol' : 'img/Capitol.png',
+                'Imperial' : 'img/Imperial.png',
+                'Ogólna' : 'img/Ogolna.png',
+                'Cybertronic' : 'img/Cybertronic.png',
+              'Legion Ciemności': 'img/Legion.png',
+                'Mishima': 'img/Mishima.png',
+                'Hordy Półksiężyca' : 'img/Hordy.png',
+                'Templariusze' : 'img/Templariusze.png', 
+                'Luterańska Triada': 'img/Triada.png',
+                'Synowie Rasputina' : 'img/Synowie.png'
+            },
+            'type': {
+              'Wojownik': 'img/Wojownik.png',
+              'Ekwipunek': 'img/Ekwipunek.png',
+              'Specjalna': 'img/Specjalna.png',
+              'Sztuka': 'img/Sztuka.png',
+              'Mroczna Harmonia': 'img/Mroczna.png',
+              'Umocnienia': 'img/Umocnienia.png',
+              'Misja': 'img/Misja.png',
+              'Relikt': 'img/Relikt.png',
+                'Moc Ki' : 'img/MocKi.png',
+              'Sojusz' : 'img/Sojusz.png',
+              'Strefa Walki' : 'img/StrefaWalki.png',
+              'Stwór' : 'img/Stwor.png'
+            },
+            'set': {
+                'LIM': 'img/LIM.png',
+                'INQ': 'img/INQ.png',
+                'GOL': 'img/GOL.png',
+                'APO': 'img/APO.png',
+                'WAR': 'img/WAR.png',
+                'PAR': 'img/PAR.png'
+            }
+        };
+
+        function getCardImageUrl(jsonCard, language)
+        {
+            return '/pics/' + jsonCard.set + '/PL/' + jsonCard.img;
+        }
+    </script>
+    <script type="text/javascript" src="gatherer.js"></script>
+</head>
+<body onload="main();">
+</body>
+</html>
